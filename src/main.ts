@@ -1,6 +1,7 @@
 import './style.css'
 import typescriptLogo from './typescript.svg'
-import { setupCounter } from '../lib/main'
+import * as Main from '../lib/main'
+console.log(Main)
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -20,4 +21,3 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)

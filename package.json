@@ -9,9 +9,9 @@
   ],
   "main": "./dist/counter.umd.cjs",
   "module": "./dist/counter.js",
-  "types": "./index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "types": "./index.d.ts",
+    "types": "./dist/index.d.ts",
     "import": "./dist/counter.js",
     "require": "./dist/counter.umd.cjs"
   },
@@ -20,7 +20,13 @@
     "build": "tsc && vite build"
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^22.5.5",
     "typescript": "^5.4.5",
-    "vite": "^5.2.10"
+    "vite": "^5.2.10",
+    "vite-plugin-dts": "^4.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
