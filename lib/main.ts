@@ -1,2 +1,3 @@
-export * as use from './use'
-export * as class from './class'
+export * as uses from './uses'
+export * as classes from './classes'
+export * as functions from './functions'
